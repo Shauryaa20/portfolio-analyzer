@@ -34,7 +34,7 @@ A modern web application for analyzing and managing investment portfolios with A
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/portfolio-analyzer.git
+git clone https://github.com/Shauryaa20/portfolio-analyzer.git
 cd portfolio-analyzer
 ```
 
@@ -96,6 +96,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - your.email@example.com
+Shauryaa - sjrajput_b23@it.vjti.ac.in
 
-Project Link: [https://github.com/yourusername/portfolio-analyzer](https://github.com/yourusername/portfolio-analyzer)
+Project Link: [https://github.com/Shauryaa20/portfolio-analyzer](https://github.com/Shauryaa20/portfolio-analyzer)
