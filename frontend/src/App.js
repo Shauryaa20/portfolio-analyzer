@@ -5,7 +5,7 @@ import Login from './components/Login';
 import { LogOut, User, Zap } from 'lucide-react';
 
 //devmind test 
-const password = "admin12345";
+const password = "admin125";
 
 function fetchUser(id) {
   return users.filter(u => u.id == id)[0];
