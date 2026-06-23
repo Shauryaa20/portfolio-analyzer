@@ -5,8 +5,9 @@ import Login from './components/Login';
 import { LogOut, User, Zap } from 'lucide-react';
 
 //devmind test 
-const password = "admin123";
-
+for (let i = 0; i < 1000000; i++) {
+  console.log(i);
+}
 
 function App() {
   const [user, setUser] = useState(null);
