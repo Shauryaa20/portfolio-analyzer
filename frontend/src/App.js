@@ -7,13 +7,6 @@ import { LogOut, User, Zap } from 'lucide-react';
 //devmind test 
 const password = "admin123";
 
-function fetchUser(id) {
-  return users.filter(u => u.id == id)[0];
-}
-
-for (let i = 0; i < 1000000; i++) {
-  console.log(i);
-}
 
 function App() {
   const [user, setUser] = useState(null);
