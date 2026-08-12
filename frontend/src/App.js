@@ -4,6 +4,11 @@ import Dashboard from './components/Dashboard';
 import Login from './components/Login';
 import { LogOut, User, Zap } from 'lucide-react';
 
+//devmind test 
+for (let i = 0; i < 1000000; i++) {
+  console.log(i);
+}
+
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -11,7 +16,7 @@ function App() {
   useEffect(() => {
     const token = localStorage.getItem('token');
     const savedUser = localStorage.getItem('user');
-    
+
     if (token && savedUser) {
       setUser(JSON.parse(savedUser));
     }
@@ -48,9 +53,9 @@ function App() {
         {/* Floating particles background */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyber-blue rounded-full opacity-60 animate-float"></div>
-          <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-cyber-purple rounded-full opacity-40 animate-float" style={{animationDelay: '2s'}}></div>
-          <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-cyber-pink rounded-full opacity-50 animate-float" style={{animationDelay: '4s'}}></div>
-          <div className="absolute top-2/3 right-1/3 w-1 h-1 bg-cyber-green rounded-full opacity-30 animate-float" style={{animationDelay: '6s'}}></div>
+          <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-cyber-purple rounded-full opacity-40 animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-cyber-pink rounded-full opacity-50 animate-float" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute top-2/3 right-1/3 w-1 h-1 bg-cyber-green rounded-full opacity-30 animate-float" style={{ animationDelay: '6s' }}></div>
         </div>
 
         {user && (
@@ -87,20 +92,20 @@ function App() {
             </div>
           </header>
         )}
-        
+
         <main className="relative z-10">
           <Routes>
-            <Route 
-              path="/login" 
-              element={user ? <Navigate to="/dashboard" /> : <Login onLogin={handleLogin} />} 
+            <Route
+              path="/login"
+              element={user ? <Navigate to="/dashboard" /> : <Login onLogin={handleLogin} />}
             />
-            <Route 
-              path="/dashboard" 
-              element={user ? <Dashboard /> : <Navigate to="/login" />} 
+            <Route
+              path="/dashboard"
+              element={user ? <Dashboard /> : <Navigate to="/login" />}
             />
-            <Route 
-              path="/" 
-              element={<Navigate to={user ? "/dashboard" : "/login"} />} 
+            <Route
+              path="/"
+              element={<Navigate to={user ? "/dashboard" : "/login"} />}
             />
           </Routes>
         </main>
